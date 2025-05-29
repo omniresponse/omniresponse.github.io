@@ -155,3 +155,18 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+
+.columns.is-centered .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 统一的 video 样式 */
+.equal-video {
+width: 100%;        /* 撑满父容器宽度 */
+height: 250px;      /* 你想要的固定高度 */
+object-fit: cover;  /* 裁剪并铺满整个区域，保持等宽等高 */
+}
