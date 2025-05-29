@@ -28,8 +28,6 @@ body {
 }
 
 
-
-
 .publication-title {
 }
 
@@ -70,11 +68,6 @@ body {
 }
 
 .publication-authors {
-    font-family: 'Google Sans', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .publication-authors a {
@@ -86,18 +79,8 @@ body {
 }
 
 .author-block {
-  position: relative;
-  margin: 0 0.5rem;    /* 左右留 0.5rem 空隙 */
+  display: inline-block;
 }
-
-/* 非最后一个作者后面插入分隔符，并与 margin 配合居中 */
-.author-block:not(:last-child)::after {
-  content: '·';
-  position: absolute;
-  right: -0.5rem;      /* 将“·”推到两个作者中间 */
-  color: #888;         /* 分隔符颜色可自定义 */
-}
-
 
 .publication-banner img {
 }
@@ -171,17 +154,4 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
-}
-
-
-.columns.is-centered .column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.equal-video {
-  width: 100%;        /* 撑满父容器宽度 */
-  height: 250px;      /* 你想要的固定高度 */
-  object-fit: cover;  /* 裁剪并铺满整个区域，保持等宽等高 */
 }
