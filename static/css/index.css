@@ -28,6 +28,8 @@ body {
 }
 
 
+
+
 .publication-title {
 }
 
@@ -68,6 +70,11 @@ body {
 }
 
 .publication-authors {
+    font-family: 'Google Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .publication-authors a {
@@ -79,8 +86,18 @@ body {
 }
 
 .author-block {
-  display: inline-block;
+  position: relative;
+  margin: 0 0.5rem;    /* 左右留 0.5rem 空隙 */
 }
+
+/* 非最后一个作者后面插入分隔符，并与 margin 配合居中 */
+.author-block:not(:last-child)::after {
+  content: '·';
+  position: absolute;
+  right: -0.5rem;      /* 将“·”推到两个作者中间 */
+  color: #888;         /* 分隔符颜色可自定义 */
+}
+
 
 .publication-banner img {
 }
